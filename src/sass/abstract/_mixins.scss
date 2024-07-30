@@ -1,0 +1,24 @@
+// MEDIA QUERY MANAGER
+/* 
+450px - Phone Screen
+450 - 750 - tablet portrait
+
+*/
+
+@mixin respond-phone {
+  @media (max-width: 450px) {
+    @content;
+  }
+}
+
+@mixin respond-tablet-portrait {
+  @media (min-width: 450px) and (max-width: 820px) {
+    @content;
+  }
+}
+
+@mixin respond-desktop {
+  @media (min-width: 820px) and (max-width: 1024px) {
+    @content;
+  }
+}

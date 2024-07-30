@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+
+  @include respond-phone {
+    font-size: 36.5%;
+  }
+
+  @include respond-tablet-portrait {
+    font-size: 52.5%;
+  }
+
+  @include respond-desktop {
+    font-size: 42.5%;
+  }
+}

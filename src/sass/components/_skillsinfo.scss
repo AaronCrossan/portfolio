@@ -1,0 +1,19 @@
+.skillsInfo {
+  font-size: 3.5rem;
+  position: absolute;
+  display: block;
+  left: $page-gutter-left;
+  top: 45%;
+
+  ul {
+    margin-top: 3rem;
+  }
+
+  p {
+    animation-name: textSlideUp;
+    animation-duration: 1.5s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 2.5s;
+    animation-fill-mode: backwards;
+  }
+}

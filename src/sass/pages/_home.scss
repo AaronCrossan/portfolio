@@ -1,0 +1,62 @@
+body {
+  background-color: $background-dark;
+  color: $foreground-light;
+}
+
+h1 {
+  position: absolute;
+  display: inline-block;
+  left: $page-gutter-left;
+  top: 25%;
+  font-size: 10rem;
+  animation-name: titleSlideIn;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+}
+
+p {
+  @include respond-phone {
+    font-size: 2.8rem;
+  }
+}
+
+.action-buttons {
+  margin-top: 10rem;
+  display: flex;
+
+  * {
+    cursor: pointer;
+  }
+
+  :first-child {
+    background-color: $background-primary;
+    transition: all 0.3s;
+  }
+
+  :first-child:hover {
+    background-color: $background-primary-light;
+    transition: all 0.3s;
+  }
+
+  :nth-child(2) {
+    margin-left: 1rem;
+    box-shadow: 0 0 0 0 inset $background-primary;
+    border: 2px solid $background-primary;
+    transition: all 0.3s;
+  }
+
+  :nth-child(2):hover {
+    box-shadow: 22.5rem 0 0 0 inset $background-primary;
+    transition: all 0.3s;
+  }
+
+  @include respond-phone {
+    justify-content: center;
+  }
+
+  :nth-child(2) {
+    @include respond-phone {
+      border: 2px solid $background-primary;
+    }
+  }
+}
